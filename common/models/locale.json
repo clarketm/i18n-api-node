@@ -1,0 +1,33 @@
+{
+  "name": "Locale",
+  "plural": "Locales",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "language": {
+      "type": "string",
+      "required": true,
+      "default": "en"
+    },
+    "partner": {
+      "type": "string",
+      "required": true,
+      "default": "common"
+    },
+    "component": {
+      "type": "string",
+      "required": true
+    },
+    "strings": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
