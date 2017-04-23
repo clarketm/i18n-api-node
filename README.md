@@ -1,5 +1,4 @@
-# Internationalization (I18n) microservice - Node
-
+# Internationalization (I18n) API - Node
 
 ### Installation
 ```bash
