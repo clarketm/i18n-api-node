@@ -109,7 +109,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 ## GET ######
 #############
 curl -X GET --header 'Accept: application/json' \ 
-  'http://0.0.0.0:3000/v1/locales/en/app'  # OR 'http://0.0.0.0:3000/v1/locales/en'  to get all components 
+  'http://0.0.0.0:3000/v1/locales/en/app'  # OR 'http://0.0.0.0:3000/v1/locales/en' to get all components 
 
 // Response Code: 200
 {
