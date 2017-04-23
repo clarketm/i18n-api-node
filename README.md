@@ -1,11 +1,11 @@
 # Internationalization (I18n) API - Node
 
-### Installation
+## Installation
 ```bash
 $ npm install
 ```
 
-### Configuration
+## Configuration
 ```js
 /* config.json */
 {
@@ -40,19 +40,23 @@ $ npm install
 }
 ```
 
-### Model
+## Model
+
+### Locale
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  language   | string |   true   |   en    |
+|  component  | string |   true   |         |   
+|  strings    | object |   true   |         | 
 ```js
-// Locale
+/////////////
+// Locale ///
+/////////////
 {
  "language": {
   "type": "string",
   "required": true,
   "default": "en"
-},
-"partner": {
-  "type": "string",
-  "required": true,
-  "default": "common"
 },
 "component": {
   "type": "string",
@@ -64,7 +68,7 @@ $ npm install
 }
 ```
 
-### Running
+## Running
 ```bash
 $ npm start
 
@@ -72,26 +76,24 @@ Web server listening at: http://0.0.0.0:3000
 Browse your REST API at http://0.0.0.0:3000/explorer
 ```
 
-### Usage
+## Usage
 ```bash
 /////////////
 // POST /////
 /////////////
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
   "language": "en", \ 
-  "partner": "common", \ 
   "component": "string", \ 
   "strings": { \ 
     "header" : "I am a header", \ 
     "body" : "I am a body", \ 
     "footer" : "I am a footer" \ 
   } \ 
-}' 'http://0.0.0.0:3000/v1/Locales'
+}' 'http://0.0.0.0:3000/v1/locales'
 
 // Response Code: 200
 {
   "language": "en",
-  "partner": "common",
   "component": "string",
   "strings": {
     "header": "I am a header",
@@ -107,7 +109,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 // GET //////
 /////////////
 curl -X GET --header 'Accept: application/json' \ 
-  'http://0.0.0.0:3000/v1/locales/en/common/app'
+  'http://0.0.0.0:3000/v1/locales/en/app'
 
 // Response Code: 200
 {
@@ -120,7 +122,7 @@ curl -X GET --header 'Accept: application/json' \
 }
 ```
 
-### :star: Credits
+## :star: Credits
 Special thanks the the following: 
 * [Loopback](https://loopback.io/) - IBM
 
