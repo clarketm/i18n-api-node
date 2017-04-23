@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -36,13 +37,16 @@
     "public": false
   },
   "Locale": {
-    "dataSource": "locale",
+    "dataSource": "db",
     "public": true,
     "options": {
       "remoting": {
         "sharedMethods": {
-          "*": true,
-          "strings": true
+          "*": false,
+          "create": true,
+          "replaceOrCreate": true,
+          "deleteById": true,
+          "get": true
         }
       }
     }
