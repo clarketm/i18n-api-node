@@ -1,6 +1,5 @@
 # Internationalization (I18n) microservice - Node
 
-## Getting Started
 
 ### Installation
 ```bash
@@ -9,13 +8,29 @@ $ npm install
 
 ### Configuration
 ```js
-/* server/config.json */
+/* config.json */
 {
-  ...
   "restApiRoot": "/v1",   // api root
   "host": "0.0.0.0",      // host
   "port": 3000,           // port
   ...
+}
+```
+```js
+/* datasources.json */
+{
+  // in-memory database (default)
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  // MongoDB database
+  "locale": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "locale",
+    "connector": "mongodb"
+  }
 }
 ```
 
