@@ -18,12 +18,19 @@ $ npm install
 ```js
 /* datasources.json */
 {
-  // in-memory database (default)
+  //////////////////////////////////
+  // in-memory database (default) //
+  //////////////////////////////////
   "db": {
     "name": "db",
     "connector": "memory"
   },
-  // MongoDB database
+  //////////////////////////
+  // MongoDB database //////
+  ///////////////////////////////////////////////////////
+  // [1] install and run mongodb 
+  // [2] change "db" => "locale" in `model-config.json`
+  ///////////////////////////////////////////////////////
   "locale": {
     "host": "localhost",
     "port": 27017,
