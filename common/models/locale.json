@@ -12,11 +12,6 @@
       "required": true,
       "default": "en"
     },
-    "partner": {
-      "type": "string",
-      "required": true,
-      "default": "common"
-    },
     "component": {
       "type": "string",
       "required": true
