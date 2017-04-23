@@ -40,6 +40,14 @@ $ npm install
 }
 ```
 
+## Running
+```bash
+$ npm start
+
+Web server listening at: http://0.0.0.0:3000
+Browse your REST API at http://0.0.0.0:3000/explorer
+```
+
 ## Model
 
 ### Locale
@@ -67,14 +75,8 @@ $ npm install
   "required": true
 }
 ```
-
-## Running
-```bash
-$ npm start
-
-Web server listening at: http://0.0.0.0:3000
-Browse your REST API at http://0.0.0.0:3000/explorer
-```
+## Operations
+![operations screenshot](https://github.com/clarketm/i18n-api-node/blob/master/screenshot.png)
 
 ## Usage
 ```bash
