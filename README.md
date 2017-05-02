@@ -125,6 +125,6 @@ curl -X GET --header 'Accept: application/json' \
 ```
 
 ## :star: Credits
-Special thanks the the following: 
+Special thanks to the following: 
 * [Loopback](https://loopback.io/) - StrongLoop
 
